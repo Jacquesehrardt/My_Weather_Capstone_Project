@@ -1,5 +1,6 @@
 <template>
-   <div id="cityCarousel" class="carousel slide">
+   <div id="cityCarousel" class="carousel slide carousel-fade">
+      <HeaderComponent />
       <div class="carousel-inner">
          <div 
             class="carousel-item" 
@@ -14,10 +15,12 @@
 
 <script>
    import WeatherComponent from './WeatherComponent.vue';
+   import HeaderComponent from './HeaderComponent.vue';
 
    export default {
       components: {
-        WeatherComponent
+        WeatherComponent,
+        HeaderComponent
       },
 
       data(){
@@ -61,19 +64,12 @@
 </script>
 
 <style>
-   div{
-    height: 100vh;
-  }
-
-   #carouselExample{
-      width: 100%;
-      height: 100%;
-      background: #000;
+   .carousel{
       display: flex;
-      align-items: center;
+      flex-direction: column;
    }
 
-   .carousel-control-prev, .carousel-control-next{
-      position: relative;
+   #cityCarousel, .carousel-inner, .carousel-item{
+      height: 100%;
    }
 </style>

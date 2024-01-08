@@ -21,4 +21,52 @@ export default ({
 </script>
    
 <style>
+   header{
+      display: flex;
+      justify-content: space-between;
+   }
+
+   header > button{
+      height: 5vh;
+      width: 5vh;
+      margin: 0;
+      padding: 0;
+      background-color: transparent;
+      border: none;
+      font-size: 20px;
+   }
+
+   #indicators{
+      margin: 0;
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: fit-content;
+      gap: 5vw;
+   }
+
+   #indicators > button{
+      margin: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #5c9ce5;
+   }
+
+   #indicators > .active{
+      width: 12px;
+      height: 12px;
+   }
+
+   @media (min-width: 1000px) {
+      header{
+         width: 35%;
+         background-color: #5c9ce5;
+      }
+
+      #indicators > button{
+         background-color: #fff;
+      }
+   }
+
 </style>
