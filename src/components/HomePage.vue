@@ -3,9 +3,9 @@
       <HeaderComponent />
       <div class="carousel-inner">
          <div 
+            v-for="(city, index) in weatherInfoList" :key="city.location.name"
             class="carousel-item" 
-            v-for="city in cityList" :key="city.id"
-            :class="[city.id===1 ? 'active' : '']"
+            :class="[index===0 ? 'active' : '']"
          >
             <WeatherComponent :city="city"/>
          </div>
@@ -26,40 +26,37 @@
       data(){
          return {
             cityList: [
-               {
-                  id: 1,
-                  name: 'Vancouver',
-                  temp: 4,
-                  state: 'Sunny',
-                  feelsLike: 3,
-                  wind: 39,
-                  humidity: 40,
-               },
-               {
-                  id: 2,
-                  name: 'Maceio',
-                  temp: 29,
-                  state: 'Cloud',
-                  feelsLike: 32,
-                  wind: 29,
-                  humidity: 50,
-               },
-               {
-                  id: 3,
-                  name: 'Viena',
-                  state: 'Rain',
-                  temp: 15,
-                  feelsLike: 16,
-                  wind: 59,
-                  humidity: 60,
-               }
+               {"name": "vancouver"},
+               // {"name": "maceio"},
+               // {"name": "vienna"},
             ],
+            weatherInfoList: [],
+            dataIsReturn: false
          }
       },
+      methods:{
+         async getWeatherInfo(city){
+            const url = `http://api.weatherapi.com/v1/forecast.json?key=d8d254ee61c74b4c833222501240701&q=${city}&days=5&aqi=no&alerts=no`;
+            const options = {
+               method: 'GET',
+            };
 
-      props: {
-         
+            try {
+               const response = await fetch(url, options);
+               const result = await response.text();
+               const weather = JSON.parse(result);
+               this.weatherInfoList.push(weather);
+               console.log(weather.location);
+            } catch (error) {
+               console.error(error);
+            }
+         },
       },
+      beforeMount(){
+         for(const city of this.cityList){
+            // this.getWeatherInfo(city.name);
+         }
+      }
    }
 </script>
 

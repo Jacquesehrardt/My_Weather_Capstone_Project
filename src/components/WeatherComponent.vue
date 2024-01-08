@@ -13,10 +13,10 @@
             </button>
             <article>
                <aside>
-                  <h2>{{ city.name }}</h2>
-                  <h2>{{ city.state }}</h2>
+                  <h2>{{ city.location.name }}</h2>
+                  <h2>{{ city.current.condition.text }}</h2>
                </aside>
-               <h1>{{ city.temp }} &deg;C</h1>
+               <h1>{{ city.current.temp_c }} &deg;C</h1>
             </article>
             <button 
                class="carousel-control-next" 
@@ -32,15 +32,15 @@
       <article class="information">
          <aside>
             <h4>Feels Like</h4>
-            <p>{{ city.feelsLike}} &deg;C</p>
+            <p>{{ city.current.feelslike_c}} &deg;C</p>
          </aside>
          <aside>
             <h4>Wind</h4>
-            <p>{{ city.wind}}km/h</p>
+            <p>{{ city.current.wind_kph}}km/h</p>
          </aside>
          <aside>
             <h4>Humidity</h4>
-            <p>{{ city.humidity}}%</p>
+            <p>{{ city.current.humidity}}%</p>
          </aside>
       </article>
    </main>
