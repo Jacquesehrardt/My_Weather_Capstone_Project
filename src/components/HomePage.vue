@@ -1,6 +1,6 @@
 <template>
    <div id="cityCarousel" class="carousel slide carousel-fade">
-      <HeaderComponent />
+      <HeaderComponent :elementsNumber="weatherInfoList.length" />
       <div class="carousel-inner">
          <div 
             v-for="(city, index) in weatherInfoList" :key="city.location.name"
@@ -53,9 +53,9 @@
          },
       },
       beforeMount(){
-         for(const city of this.cityList){
-            // this.getWeatherInfo(city.name);
-         }
+         // for(const city of this.cityList){
+         //    this.getWeatherInfo(city.name);
+         // }
       }
    }
 </script>
