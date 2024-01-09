@@ -30,8 +30,724 @@
                // {"name": "maceio"},
                // {"name": "vienna"},
             ],
-            weatherInfoList: [],
-            dataIsReturn: false
+            weatherInfoList: [
+               {
+                  "location": {
+                     "name": "Maceio",
+                     "region": "Alagoas",
+                     "country": "Brazil",
+                     "lat": -9.67,
+                     "lon": -35.72,
+                     "tz_id": "America/Maceio",
+                     "localtime_epoch": 1704752717,
+                     "localtime": "2024-01-08 19:25"
+                  },
+                  "current": {
+                     "last_updated": "2024-01-08 19:15",
+                     "temp_c": 27.0,
+                     "temp_f": 80.6,
+                     "is_day": 0,
+                     "condition": {
+                        "text": "Overcast",
+                        "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png"
+                     },
+                     "wind_mph": 11.9,
+                     "wind_kph": 19.1,
+                     "humidity": 89,
+                     "feelslike_c": 30.5,
+                     "feelslike_f": 86.9
+                  },
+                  "forecast": {
+                     "forecastday": [
+                        {
+                           "date_epoch": 1704672000,
+                           "day": {
+                              "maxtemp_c": 30.0,
+                              "maxtemp_f": 86.0,
+                              "mintemp_c": 24.1,
+                              "mintemp_f": 75.4,
+                              "condition": {
+                                    
+                              }
+                           },
+                           "astro": {
+                              
+                           },
+                           "hour": [
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              }
+                           ]
+                        },
+                        {
+                           "date_epoch": 1704758400,
+                           "day": {
+                              "maxtemp_c": 29.5,
+                              "maxtemp_f": 85.1,
+                              "mintemp_c": 25.9,
+                              "mintemp_f": 78.6,
+                              "condition": {
+                                    
+                              }
+                           },
+                           "astro": {
+                              
+                           },
+                           "hour": [
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              }
+                           ]
+                        },
+                        {
+                           "date_epoch": 1704844800,
+                           "day": {
+                              "maxtemp_c": 28.7,
+                              "maxtemp_f": 83.7,
+                              "mintemp_c": 25.4,
+                              "mintemp_f": 77.7,
+                              "condition": {
+                                    
+                              }
+                           },
+                           "astro": {
+                              
+                           },
+                           "hour": [
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              }
+                           ]
+                        },
+                        {
+                           "date_epoch": 1704931200,
+                           "day": {
+                              "maxtemp_c": 27.8,
+                              "maxtemp_f": 82.1,
+                              "mintemp_c": 25.6,
+                              "mintemp_f": 78.1,
+                              "condition": {
+                                    
+                              }
+                           },
+                           "astro": {
+                              
+                           },
+                           "hour": [
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              }
+                           ]
+                        },
+                        {
+                           "date_epoch": 1705017600,
+                           "day": {
+                              "maxtemp_c": 28.7,
+                              "maxtemp_f": 83.6,
+                              "mintemp_c": 25.2,
+                              "mintemp_f": 77.3,
+                              "condition": {
+                                    
+                              }
+                           },
+                           "astro": {
+                              
+                           },
+                           "hour": [
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              },
+                              {
+                                    "condition": {
+                                       
+                                    }
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               }
+            ],
          }
       },
       methods:{

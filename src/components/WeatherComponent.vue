@@ -42,14 +42,19 @@
             <h4>Humidity</h4>
             <p>{{ city.current.humidity}}%</p>
          </aside>
+         <ForecastComponent :forecast="this.city.forecast.forecastday" />
       </article>
    </main>
 </template>
 
 <script>
+   import ForecastComponent from './ForecastComponent.vue';
 
    export default ({
       name: 'WeatherComponent',
+      components: {
+        ForecastComponent,
+      },
       props: {
          city: {},
       },
