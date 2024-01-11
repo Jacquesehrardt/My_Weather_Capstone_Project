@@ -3,7 +3,7 @@ import 'bootstrap/dist/js/bootstrap.js'
 import VueApexCharts from "vue3-apexcharts";
 import { createApp } from 'vue'
 import App from './App.vue'
-
+import router from './router/router'
 
 /* import the fontawesome core */
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -16,6 +16,7 @@ import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
 library.add(faPlus, faEllipsisVertical)
 
 createApp(App)
+.use(router)
 .use(VueApexCharts)
 .component('FontAwesomeIcon', FontAwesomeIcon)
 .component('apexcharts', VueApexCharts)
