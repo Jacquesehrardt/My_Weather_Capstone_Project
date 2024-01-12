@@ -12,8 +12,9 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 /* import specific icons */
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 import { faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 /* add icons to the library */
-library.add(faPlus, faEllipsisVertical)
+library.add(faPlus, faEllipsisVertical, faArrowLeft)
 
 createApp(App)
 .use(router)

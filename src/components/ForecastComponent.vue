@@ -10,7 +10,7 @@
    export default ({
       name: 'ForecastComponent',
       props: {
-         forecast: [],
+         forecast: Array,
       },
       data(){
          return{
@@ -46,7 +46,6 @@
                   background:{
                      enabled: false,
                   }
-                  // textAnchor: "start"
                },
                stroke: {
                   curve: 'smooth'
@@ -57,10 +56,6 @@
                },
                grid: {
                borderColor: '#e7e7e7',
-               // row: {
-               //    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-               //    opacity: 0.5
-               // },
                },
                markers: {
                   size: 2
@@ -69,17 +64,6 @@
                   categories: [],
                   position: "top",
                   tickPlacement: 'between'
-                  // title: {
-                  //    text: 'Day'
-                  // }
-               },
-               yaxis: {
-                  show: false,
-                  // title: {
-                  //    text: 'Temperature'
-                  // },
-                  // min: 21,
-                  // max: 33
                },
                legend: {
                   show: false,
@@ -101,7 +85,6 @@
             };
             const formatDate = new Intl.DateTimeFormat("en-US", options).format(date);
             this.chartOptions.xaxis.categories.push(formatDate);
-            // console.log(formatDate);
          }
       }
    })
